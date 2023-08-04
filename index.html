@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap and Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="logo.png" alt="logo" class="logo">CapturePro
+            
+        </h1>
+        <div class="camera-container">
+            <video id="video" width="400" height="200" autoplay></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <img id="image" src="" alt="taken-image" style="display:none;">
+        </div>
+        <div class="buttons">
+            <button id="capture-btn">&#x1F4F7;</button>
+            <button id="retake-btn" style="display: none;">&#x1F504;</button>
+            <button id="download-btn" style="display: none;">&#x2B07;</button>
+        </div>
+        <div class="filters-container">
+            <button class="filter" data-filter="">Original</button>
+            <button class="filter" data-filter="brightness(1.2) contrast(1.2)">UV Filter</button>
+            <button class="filter" data-filter="sepia(1)">Sepia</button>
+            <button class="filter" data-filter="grayscale(1)">Black & White</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

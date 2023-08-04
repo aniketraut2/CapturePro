@@ -1,0 +1,118 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #111;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px; /* Increase the logo size */
+    height: 80px; /* Increase the logo size */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.camera-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust the max width as needed */
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+video,
+canvas,
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffbb00;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 187, 0, 0.8);
+    transition: box-shadow 0.3s ease;
+    font-size: 24px;
+    text-shadow: 0 0 10px rgba(255, 187, 0, 0.8);
+}
+
+button:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 187, 0, 0.8);
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: default;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#retake-btn,
+#download-btn {
+    display: none;
+}
+
+.filters-container {
+    margin-top: 20px;
+    display: none;
+}
+
+.filter {
+    padding: 6px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 5px;
+    background-color: #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(85, 85, 85, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+.filter:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 20px rgba(85, 85, 85, 0.8);
+}
+
+.filter.active {
+    background-color: #ffbb00;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 187, 0, 0.8);
+}
